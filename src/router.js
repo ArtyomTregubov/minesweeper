@@ -10,7 +10,7 @@ const routes = [
     { path: '/leaderboard', component: LeaderBoard },
 ];
 const router = createRouter({
-    history: createWebHistory(),
-    routes,
-});
+    history: createWebHistory('/minesweeper/'), 
+    routes
+  })
 export default router;
