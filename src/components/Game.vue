@@ -295,6 +295,7 @@ button {
 .grid {
   display: grid;
   gap: 2px;
+  margin: 0 0 50px;
 }
 
 .cell {

@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url' // Современный аналог __dirname
+import { fileURLToPath, URL } from 'node:url' 
 
 export default defineConfig({
   plugins: [vue()],
   base: '/minesweeper/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)) // Замена __dirname
+      '@': fileURLToPath(new URL('./src', import.meta.url)) 
     }
   }
 })
